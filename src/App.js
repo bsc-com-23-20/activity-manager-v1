@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
       <NewForm onSubmit={addTodo} />
-      <h1 className="header">Todo List</h1>
+      <h1 className="header">Tasks List</h1>
       <TasksList todos={todos} toggleTodo={toggleTodo}  />
     </>
   )
