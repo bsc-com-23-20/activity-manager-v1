@@ -4,12 +4,12 @@ export function NewForm({ onSubmit }){
     const[newTask, setNewTask] = useState("")
 
     function handleSubmit(e){
-        e.preventDefault()}
+        e.preventDefault()
         
         onSubmit(newTask)
         setNewTask("")
 
-
+    }
     return(
 <form onSubmit={handleSubmit} className="form-item">
     <label htmlFor="tasks">New Task</label>
