@@ -13,11 +13,11 @@ export default function App() {
 
     return JSON.parse(localValue)
   })
-
+  // saving states??
   useEffect(() => {
     localStorage.setItem("ITEMS", JSON.stringify(todos))
   }, [todos])
-
+  //  adding iterms on the to do
   function addTodo(title) {
     setTodos(currentTodos => {
       return [
@@ -26,14 +26,14 @@ export default function App() {
       ]
     })
   }
-
+  // toggles to do items
   function toggleTodo(id, completed) {
+    
     setTodos(currentTodos => {
       return currentTodos.map(todo => {
         if (todo.id === id) {
           return { ...todo, completed }
         }
-
         return todo
       })
     })
