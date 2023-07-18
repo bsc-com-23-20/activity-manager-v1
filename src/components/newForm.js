@@ -4,10 +4,12 @@ export function NewForm({ onSubmit }){
     const[newTask, setNewTask] = useState("")
 
     function handleSubmit(e){
-        e.preventDefault()}
-        
+        e.preventDefault()
         onSubmit(newTask)
         setNewTask("")
+    }
+        
+        
 
 
     return(
