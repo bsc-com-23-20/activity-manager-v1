@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box
+}
+body{
+    margin: 0
+}
+.nav{
+    background-color: azure;
+    color: darkturquoise;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+
+}
+.nav ul{
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none ;
+    display: flex
+
+
+}
+
+.nav a{
+    color:black;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+    padding: .25rem;
+    display: flex
+
+}
+.nav li:hover{
+    background-color: wheat
+}

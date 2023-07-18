@@ -1,0 +1,40 @@
+
+  .form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+  }
+  
+  
+  
+  .btn {
+    background: hsl(200, 100%, 50%, 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 50%);
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn:hover,
+  .btn:focus-visible {
+    background: hsl(200, 100%, 50%, 0.2);
+  }
+  
+  
+  
+  .form-item input {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    color: hsl(200, 100%, 90%);
+  }
+  
+  .form-item input:focus {
+    border: 1px solid hsl(200, 100%, 70%);
+  }
+  

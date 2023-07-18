@@ -1,12 +1,26 @@
 import React from 'react'
+import "../css/navbar.css"
 
-function navbar() {
+export function Navbar() {
   return (
-    <div>
+    <nav className="nav">
+    <a href="/" className="navname">
+    <ul>
+      <li>
+        <a href ="/signup">Signup</a>
+        </li>
+        <li>
+        <a href ="/taskmanager">TaskManager</a>
+        </li>
+        <li>
+        <a href ="/notifications">Notifications</a>
+      </li>
+    </ul>
+    
+    </a>
       
-    </div>
+    </nav>
   )
 }
 
-export default navbar
 
