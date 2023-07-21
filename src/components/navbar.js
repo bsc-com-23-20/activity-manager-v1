@@ -4,6 +4,7 @@ import "../css/navbar.css"
 export function Navbar() {
   return (
     <nav className="nav">
+    <div className="navtitle"> Activity Manager</div>
     <a href="/" className="navname">
     <ul>
       <li>

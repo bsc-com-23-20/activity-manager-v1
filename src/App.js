@@ -15,9 +15,9 @@ export default function App() {
     return JSON.parse(localValue)
   })
   // saving states??
-  // useEffect(() => {
-  //   localStorage.setItem("ITEMS", JSON.stringify(todos))
-  // }, [todos])
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(todos))
+  }, [todos])
   //  adding iterms on the to do
   function addTodo(title) {
     setTodos(currentTodos => {
@@ -44,6 +44,7 @@ export default function App() {
 
   return (
     <>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <Navbar />
     <NewForm onSubmit={addTodo} />
     <h1 className="header">Tasks List</h1>
