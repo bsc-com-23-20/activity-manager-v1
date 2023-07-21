@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { NewForm } from "./components/newForm"
 import { TasksList } from "./components/tasksList"
 import "./App.css"
+import{ Navbar } from "./components/navbar";
 
 
 export default function App() {
@@ -14,9 +15,9 @@ export default function App() {
     return JSON.parse(localValue)
   })
   // saving states??
-  useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(todos))
-  }, [todos])
+  // useEffect(() => {
+  //   localStorage.setItem("ITEMS", JSON.stringify(todos))
+  // }, [todos])
   //  adding iterms on the to do
   function addTodo(title) {
     setTodos(currentTodos => {
@@ -43,9 +44,11 @@ export default function App() {
 
   return (
     <>
+    <Navbar />
     <NewForm onSubmit={addTodo} />
     <h1 className="header">Tasks List</h1>
     <TasksList todos={todos} toggleTodo={toggleTodo}  /> 
+    
     </>
   )
 }

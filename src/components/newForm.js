@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "../css/newForm.css"
 
 export function NewForm({ onSubmit }){
     const[newTask, setNewTask] = useState("")
@@ -8,6 +9,7 @@ export function NewForm({ onSubmit }){
     /** this is the one bringing the error */
     function handleSubmit(e){
         e.preventDefault()
+        
         onSubmit(newTask)
         setNewTask("")
     }      

@@ -1,4 +1,5 @@
 import { Tasks } from "./tasks";
+import "../css/tasksList.css"
 
 
 
