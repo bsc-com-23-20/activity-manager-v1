@@ -4,16 +4,15 @@ import Api from "../apis/api";
 
 export function Tasks({ completed, id, title, toggleTodo }) {
   // async componentDidMount(){
-    async function getUniversities() {     
-      
-      let data = await Api.getUniversitiesGivenCountry();
+    async function getUniversities() {  
+      // geting data from te api
+      return await Api.getUniversitiesGivenCountry();
       
     } 
   
   useEffect(()=>{
-    getUniversities()
-      // debugger
-      
+    let data =getUniversities()
+    console.log(data);
     })
 
   return (
