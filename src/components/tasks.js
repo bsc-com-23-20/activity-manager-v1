@@ -1,5 +1,23 @@
+import { useEffect } from "react";
+import Api from "../apis/api";
+
+
 export function Tasks({ completed, id, title, toggleTodo }) {
-    return (
+  // async componentDidMount(){
+    async function getTasks() {  
+      // geting data from te api
+      return await Api.getTasks();
+      
+    } 
+  
+  useEffect(()=>{
+    debugger
+    
+    let data =Api.getTasks();
+    console.log(data);
+    })
+
+  return (
       <li>
         <label>
           <input
