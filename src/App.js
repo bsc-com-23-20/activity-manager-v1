@@ -12,6 +12,7 @@ import{ Navbar } from "./components/navbar";
 import Tasks from './components/tasks';
 import Sidebar from './components/sidebar';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Buttons from './components/button';
 
 
 
@@ -71,9 +72,11 @@ export default function App() {
     <Router>
       <div className="App">
         <Sidebar />
+        <Buttons />
+        
       </div>
     </Router>
-  
+    
 
 
   
