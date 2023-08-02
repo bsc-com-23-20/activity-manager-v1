@@ -36,36 +36,36 @@ export default function Tasks({ completed, id, title, toggleTodo }) {
     tableData =personData;
   }
 
-  return (
-    <>
-    {/* the question marks (?) will check in the object is empty 
-    to some extent a ternaly operator
-    */}
-      {personData ? (
-        <table id="my_table" className="display" style={{ width: "100%" }}>
-          <thead>
-            { <tr className="heading-table">
-              {tableHeaders?.map((header) => (
-                <th>{header}</th>
-              ))} }
-            {</tr> 
-          </thead>
-// somehow this is bringing an error
+//   return (
+//     <>
+//     {/* the question marks (?) will check in the object is empty 
+//     to some extent a ternaly operator
+//     */}
+//       {personData ? (
+//         <table id="my_table" className="display" style={{ width: "100%" }}>
+//           <thead>
+//             { <tr className="heading-table">
+//               {tableHeaders?.map((header) => (
+//                 <th>{header}</th>
+//               ))} }
+//             {</tr> 
+//           </thead>
+// // somehow this is bringing an error
 
-          <tbody>
-            {{tableData?.map((d) => (
-              <tr>
-                <td>{d.id}</td>
-                <td>{d.userId}</td>
-                <td>{d.title}</td>
-                <td>{d.body}</td>
-              </tr>
-            ))} }
-          </tbody>
-        </table>
-      ) : (
-        <p>Loading....</p>
-      )}
-    </>
-  );
-}
+//           <tbody>
+//             {{tableData?.map((d) => (
+//               <tr>
+//                 <td>{d.id}</td>
+//                 <td>{d.userId}</td>
+//                 <td>{d.title}</td>
+//                 <td>{d.body}</td>
+//               </tr>
+//             ))} }
+//           </tbody>
+//         </table>
+//       ) : (
+//         <p>Loading....</p>
+//       )}
+//     </>
+//   );
+ }

@@ -11,6 +11,8 @@ import { TasksList } from "./components/tasksList"
 import{ Navbar } from "./components/navbar";
 import Tasks from './components/tasks';
 import Sidebar from './components/sidebar';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 
 
@@ -64,9 +66,16 @@ export default function App() {
     <TasksList todos={todos} toggleTodo={toggleTodo}  /> </div>
     </div>
   </div> */}
-  <Tasks />
-    <Tasks List/>
-    <Sidebar/>
+  
+  
+    <Router>
+      <div className="App">
+        <Sidebar />
+      </div>
+    </Router>
+  
+
+
   
     
     </>
