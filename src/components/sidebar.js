@@ -30,24 +30,25 @@ const Sidebar = () => {
             <NavLink exact to="/profile" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
+            {/* <NavLink exact to="/analytics" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
             </NavLink>
 
             <NavLink exact to="/hero404" target="_blank" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="exclamation-circle">404 page</CDBSidebarMenuItem>
-            </NavLink>
+            </NavLink> */}
           </CDBSidebarMenu>
         </CDBSidebarContent>
 
         <CDBSidebarFooter style={{ textAlign: 'center' }}>
-          <div
+          <button
             style={{
               padding: '20px 5px',
+              
             }}
           >
             Sign out
-          </div>
+          </button>
         </CDBSidebarFooter>
       </CDBSidebar>
     </div>

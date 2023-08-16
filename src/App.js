@@ -66,13 +66,15 @@ export default function App() {
     <h1 className="header">Tasks List</h1>
     <TasksList todos={todos} toggleTodo={toggleTodo}  /> </div>
     </div>
-  </div> */}
+  </div> */
+  <Buttons />
+  }
   
   
     <Router>
       <div className="App">
         <Sidebar />
-        <Buttons />
+        
         
       </div>
     </Router>

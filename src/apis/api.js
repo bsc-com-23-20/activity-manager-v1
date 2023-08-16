@@ -4,27 +4,27 @@
  * the data could processed here if necessary but its not advisable
  */
 import axios from 'axios'; 
-// class Api {
+class Api {
 //     // this function will get data from a specific end point    
-//     getAllPost(){
+    getAllPost(){
 //       // stoping point
       
       
 
 //         // put you link to the api here
-//       let endPont = "https://jsonplaceholder.typicode.com/posts"
+      let endPont = "https://activity-manager.adaptable.app/"
 //       // debugger
       
 
 //         //getJSON is a function that will fetch data using http
-//       // return  
-//       return getJSON(endPont)
-//     }
-//     getTasks(){
-//       let endPont = "https://jsonplaceholder.typicode.com/posts"
+      return  
+      return getJSON(endPont)
+    }
+    getTasks(){
+      let endPont = "https://jsonplaceholder.typicode.com/posts"
 //       // debugger      
-//       return getJSON(endPont)
-//     }
+      return getJSON(endPont)
+    }
 //     // get tasks
 //     // getTasks(){   
 //     //   debugger   
