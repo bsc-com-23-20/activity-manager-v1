@@ -72,7 +72,7 @@ class Api {
 //         return error;
 //       } )
 //       ;
-//   };
+  };
 
 
-//   export default Api;
+  export default Api;
